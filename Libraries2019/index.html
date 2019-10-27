@@ -1,1 +1,97 @@
-
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>The Libraries of Toronto</title>
+	
+	<link rel="stylesheet" href="a5.css">
+	<link rel="icon" href="img/icon.gif" type="image/gif" >
+	<!--script src="//d3js.org/d3.v4.min.js"></script-->
+	<script type="text/javascript" src="https://strongriley.github.io/d3/d3.js?2.2.0"></script>
+	<script src='https://strongriley.github.io/d3/d3.layout.js?2.2.0' type='text/javascript'></script>
+    <style>
+    </style>
+  </head>
+  <body>
+  <div id="header">
+		<h1>Libraries Heal Divisions</h1>
+	</div>
+	<div id="mainBody">
+	<div id="article">
+		<p>
+Does the growing income inequality in Toronto call for a change in accessibility to an integral academic institution?
+ </p><p>
+Varying levels of usage among the branches of Toronto’s municipal library system, the Toronto Public Library have been investigated within socio economic and demographic variables to help determine some of the specific structural factors that facilitate and encourage the usage of libraries.
+ </p><p>
+Immigrants and visible minorities in Toronto have concentrated in low-income neighbourhoods and white residents dominate affluent areas in numbers far higher than their share of the population. Present as it is, this segregation does not play a significant role in the equity of access to the public service – in fact, it suggests the library system is, for the most part, doing a good job of reaching the whole population of the city.
+ </p><p>
+The highest number of immigrants were found to be in Fairview and North York Central, averaging a middle-class income bracket. On the other hand, the smaller concentration of immigrants was located in Black Creek and Highland Creek, amongst others. The latter two are an example worth noting because even though Highland Creek had an influx of 855 immigrants with an upper-class income average, Black Creek, still low in immigrant count, averaged to a lower income bracket.
+ </p><p>
+Areas with the largest immigrant influx and low to middle income bracket, such as Fairview and North York Central, presented the highest amount of library card holders and the highest number of individuals with higher education. Highland Creek which had an upper-class income bracket, only totalled 3690 higher education counts – a relatively low count compared to North York Central that surpassed with an 11000 count.
+ </p><p>
+Libraries are not the kinds of institutions most social scientists or policy makers will bring up when discussing the networks of relationships among people who live and work in the society – but they offer something for everyone, regardless of title, race or occupation. 
+	</p><p>
+Click below to explore how different variables relate in the visualization. The top buttons will adjust the size of each of the library's squares to a proportion of the total rectangle. The buttons below change the colours to show a variety of variables connected to each library. More saturated rectangles have higher values. The two treemaps are sorted by income on the left and immigrants on the right. The highest incomes and number of immigrants are in the bottom left of their respective treemaps. Please wait for each change to complete before selecting another or you may get innaccurate shapes and colours!
+		</p>
+	</div>
+	
+		<div id="buttons">
+		<script src="a5Button.js"></script>
+			Size: <span id="curSize">Default</span><br>
+			<button id='def' onclick="SDef()">
+				Default
+			</button>
+			<button id='area' onclick="SArea()">
+				Land Area
+			</button>
+			<button id='pop' onclick="SPop()">
+				Population
+			</button>
+			<button id='cards' onclick="SCards()">
+				Cardholders
+			</button>
+			<button id='income' onclick="SInc()">
+				Income
+			</button>
+			<button id='bach' onclick="SBach()">
+				Education
+			</button>
+			<button id='immi' onclick="SImmi()">
+				Immigrants
+			</button>
+			<br>
+			Colour: <span id="curColour">Default</span><br>
+			<button id='noCol' onclick="CDef()">
+				Default
+			</button>
+			<button id='cardsCol' onclick="CCards()">
+				Cardholders
+			</button>
+			<button id='incomeCol' onclick="CInc()">
+				Income
+			</button>
+			<button id='bachCol' onclick="CBach()">
+				Education
+			</button>
+			<button id='immiCol' onclick="CImmi()">
+				Immigrants
+			</button>
+			<button id='immiPrpCol' onclick="CImmiPrp()">
+				Immigrant %
+			</button>
+		</div>
+		<div class='treeMap' id='chartIncome'>
+			Income
+		</div>
+		<script src = "a5mainIncome.js"></script>
+		<div class='treeMap' id='chartImmi'>
+			Immigrants
+		</div>
+		<div>
+			<p>Data from Toronto Open Data</p>
+		</div>
+		<script src = "a5mainImmi.js"></script>
+		<script src = "a5Change.js"></script>
+	</div>
+  </body>
+</html>
