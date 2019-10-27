@@ -1,0 +1,111 @@
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	background-image:	url("img/BookBkgrnd.png");
+	background-repeat:	repeat;
+	font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif; 
+}
+div.tooltip {
+	position: absolute;
+	text-align: center;
+	width: 100px;
+	height: 30px;
+	padding: 5px;
+	font-size: 10px;
+	background: Linen;
+	border: solid 1px Grey;
+	border-radius: 3px;
+	display: inline;
+	pointer-events: none;
+}
+
+#header{
+	text-align: center;
+	color:white;
+	background-color:#3d3329;
+	padding: 30px;
+	margin-right:5%;
+	margin-left:5%;
+}
+#article{
+	text-align:justify;
+	margin-right:20%;
+	margin-left:20%;
+	font-size:18px;
+}
+
+.header{
+	padding: 10px;
+	text-align: left;
+	background: black;
+	color: white;
+	font-size: 30px;
+}
+#mainBody{
+	margin-right:5%;
+	margin-left:5%;
+	background-color: white;
+	padding:15px;
+	text-align: left;
+	
+}
+#buttons{
+	font-size:20px;
+	text-align: center;
+}
+
+
+
+button{
+	background-color: LightYellow;
+	border: 2px solid Grey;
+	border-radius: 2px;
+	color: Black;
+	padding: 8px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.2s;
+	cursor: pointer;
+}
+button:hover{
+	background-color: Linen ;
+}
+
+.treeMap{
+	text-align: center;
+}
+
+.node {
+  border: solid 1px white;
+  font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif; 
+  line-height: 12px;
+  overflow: hidden;
+  position: absolute;
+  text-indent: 2px;
+}
+
+.cell {
+	font-size:10px;
+	  border: solid 1px white;
+	  font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif; 
+	  line-height: 12px;
+	  overflow: hidden;
+	  position: absolute;
+	  text-indent: 2px;
+	  background-color: hsl(0, 0%, 60%);
+}
+
+#chartIncome {
+	width:50%;
+	float:left;
+}
+#chartImmi {
+	width:50%;
+	float: right;
+}
