@@ -35,7 +35,7 @@ map.on('click', function (e) {
 });
 
 map.on('load', function() {
-    map.loadImage('http://neogeoweb.ca/a4/group3/busPointer.png', function(error, image) {
+    map.loadImage('busPointer.png', function(error, image) {
         if (error) throw error;
         map.addImage('busPointer', image);
         
@@ -68,7 +68,7 @@ map.on('load', function() {
     });
 	
 	//adding the point that will move to your click
-	map.loadImage('http://neogeoweb.ca/a4/group3/clickPointer.png', function(error, image) {
+	map.loadImage('clickPointer.png', function(error, image) {
         if (error) throw error;
         map.addImage('clickPointer', image);
         
