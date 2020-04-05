@@ -1,0 +1,3 @@
+The way the HttpXMLRequest is implimented, the request runs last. This means that the arrays are empty if called anywhere other than after the click. It needs to run tht httpXMLRequest first. 
+
+Collision boxes needed to be disabled in the styles so that both points could appear

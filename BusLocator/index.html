@@ -1,0 +1,41 @@
+<html>
+	
+	<head>
+		<link rel="stylesheet" href="mainStyle.css">
+		<script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+		<link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+		<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js'></script>
+		
+		<!--
+		<script src='https://api.tiles.mapbox.com/mapbox.js/v0.6.6/mapbox.js'></script>
+		<script src='http://underscorejs.org/underscore-min.js'></script>
+		<link href='https://api.tiles.mapbox.com/mapbox.js/v0.6.6/mapbox.css' rel='stylesheet' />
+		-->
+		
+		<link rel="icon" href="busIcon.gif" type="image/gif" >
+		<title>The Big Blue Bus Catcher</title>
+		
+	</head>
+	
+	<body>
+		<div style="width: 100%; overflow: hidden;">
+			<div id= "leftPanel" style="width: 350px; float: left;padding-right: 10px;">
+				<img src="logo.jpg" alt="BBB_Logo" style="width:250px;height:250px;">
+				<div id="info">
+					<p id = "genInfo">
+						This app is to see if you can catch the <br>Big Blue Bus! <br>
+						Click on the map and we'll tell you when the next nearest bus is and if you can make it!
+					</p>
+					<div id="displayInfo">
+						Click on the map!
+					</div>
+				</div>
+			</div>
+			<div style="margin-left: 350px; height: 800px;" id='map'></div>
+			<script src="homeScript.js"></script><!-- Get map script loads the map -->
+		</div>
+	</body>
+	
+</html>
+
+<!-- http://webservices.nextbus.com/service/publicXMLFeed?command=predictions&a=bigbluebus&stopId=2051 -->
